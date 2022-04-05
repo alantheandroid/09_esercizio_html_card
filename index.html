@@ -4,17 +4,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Card</title>
+
+  <style>
+    div.card-element {
+      max-width: 250px;
+      border: 0.5px solid grey;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 10px;
+    }
+
+    td {
+      border-bottom: 0.5px solid grey;
+    }
+  </style>
 </head>
 
 <body>
-  <table>
-    <div class="card">
-      <img src="profile_picture.jpg"
-      alt="Profile picture"
-      width="250px">
-      
-    </div>
-  </table>
+  <div class="card-element" style="width: 250px;">
+    <img src="profile_picture.jpg" alt="Profile picture" style="width: 250px; "/>
+    <table style="border-collapse: collapse;">
+      <thead>
+        <tr><th style="border:none;">Alessio Ilardi</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quasi quibusdam amet. Necessitatibus ratione, neque sapiente provident rem illum est optio doloremque? Iusto maxime commodi culpa, odio dicta asperiores quam!</td></tr>
+        <tr><td><p>Istruzione</p></td></tr>
+        <tr><td><p>Competenze</p></td></tr>
+        <tr><td><p>Esperienze</p></td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td style="border-bottom: unset;"><a href="https://github.com/alantheandroid" target="_blank">Github</a>    <a href="https://www.instagram.com/alantheandroid/">Instagram</a></td></tr>
+      </tfoot>
+    </table>
+  </div>  
 </body>
 </html>
